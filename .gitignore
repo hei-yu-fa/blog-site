@@ -2,7 +2,7 @@
 .idea/
 node_modules/
 *.log
-db.json
+# db.json
 public/
 .deploy*/
 package-lock.json
