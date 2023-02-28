@@ -1,11 +1,11 @@
-title: Hexo
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
-author: Hexo
+title: hexo
+subtitle: "x xxxx, xxxxxx & xxxxxxx xxxx xxxxxxxxx xxxxxxx xx xxxxxxx."
+description: "xxxx xx x xxxx, xxxxxx & xxxxxx xxxx xxxxxxxx xxxxxxx xx xxxxxxx."
+author: xxxx
 language: en
 timezone: UTC
 
-url: https://hexo.io
+url: https://www.castpeer.com
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
