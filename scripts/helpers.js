@@ -115,32 +115,6 @@ hexo.extend.helper.register('page_anchor', str => {
   return $.html();
 });
 
-hexo.extend.helper.register('plugin_list', function() {
-  const partial = hexo.extend.helper.get('partial').bind(this);
-  let html = '';
-
-  const type = this.page.data;
-  const arr = this.site.data[type];
-
-  if (type === 'themes') {
-    arr.sort(() => { return Math.random() > 0.5 ? -1 : 1; });
-  }
-
-  if (type === 'plugins') {
-    arr.sort((a, b) => {
-      const nameA = a.name.toUpperCase();
-      const nameB = b.name.toUpperCase();
-      return nameA < nameB ? -1 : 1;
-    });
-  }
-
-  for (const plugin of arr) {
-    html += partial('partial/' + this.page.partial, { plugin });
-  }
-
-  return html;
-});
-
 hexo.extend.helper.register('lunr_index', data => {
   const index = lunr(function() {
     this.field('name', {boost: 10});
@@ -167,11 +141,11 @@ hexo.extend.helper.register('lang_name', function(lang) {
   return data.name || data;
 });
 
-hexo.extend.helper.register('disqus_lang', function() {
+hexo.extend.helper.register('livere_lang', function() {
   const lang = this.page.lang;
   const data = this.site.data.languages[lang];
 
-  return data.disqus_lang || lang;
+  return data.livere_lang || lang;
 });
 
 hexo.extend.filter.register('template_locals', locals => {
