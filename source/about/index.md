@@ -40,3 +40,5 @@ There are two tiers of donation:
 - More than $100, your name, icon, and website link will be on the home page for at least one month (depending on the amount).
 
 Again, thanks for your support!
+
+<!-- 这里肯定是要替换一下文案的，看后面怎么替换了 -->
