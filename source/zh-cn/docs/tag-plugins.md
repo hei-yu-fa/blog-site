@@ -302,29 +302,15 @@ content
 
 **链接使用文章的标题**
 
-`{% raw %}{% post_link hexo-3-8-released %}{% endraw %}`
-
-{% post_link hexo-3-8-released %}
 
 **链接使用自定义文字**
 
-`{% raw %}{% post_link hexo-3-8-released '通往文章的链接' %}{% endraw %}`
-
-{% post_link hexo-3-8-released '通往文章的链接' %}
 
 **对标题的特殊字符进行转义**
 
-```
-{% post_link hexo-4-released 'How to use <b> tag in title' %}
-```
-{% post_link hexo-4-released 'How to use <b> tag in title' %}
 
 **禁止对标题的特殊字符进行转义**
 
-```
-{% post_link hexo-4-released '<b>bold</b> custom title' false %}
-```
-{% post_link hexo-4-released '<b>bold</b> custom title' false %}
 
 ## 引用资源
 

@@ -49,9 +49,10 @@
   &:hover
     background: color-link-hover
 
-#banner-share
+#banner-download
   display: none
   padding-bottom: 60px
+  text-align: center
   @media mq-normal
     display: block
 
@@ -89,7 +90,90 @@
   line-height: 1.2;
   color: #fff
 
-#intro-feature-list
+#intro-text-1, #intro-text-2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: #575757;
+  word-break: break-word;
+  font-family: PT Sans,sans-serif;
+}
+
+#intro-text-1 {
+  padding: 20% 0%;
+  max-width: 800px;
+}
+
+#intro-text-2 {
+  .red {
+    color: #f94b4b;
+    font-weight: 600;
+    line-height: 1.125;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #intro-text-1, #intro-text-2 {
+    font-size: 1.5rem!important;
+  }
+
+  #intro-text-2 {
+    max-width: 960px;
+
+    .red {
+      font-size: 34px !important;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  @media screen and (min-width: 1024px) {
+    height: 600px;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-wrap, .feature-wrap-third {
+  margin-top: 20px;
+  padding-top: 6rem;
+  h3.title {
+    font-size: 2rem;
+  }
+  h5.subtitle {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  h3.title, h5.subtitle  {
+    text-align: center;
+    color: white;
+  }
+}
+
+.feature-wrap {
+  background-color: #171f26;
+}
+
+.feature-wrap-third {
+  background-color: black;
+}
+
+#intro-feature-list, #intro-feature-list-third
+  margin: 1.5rem 0rem;
   padding-top: 20px
   display: flex
   flex-flow: column
@@ -116,12 +200,28 @@
     flex: 0 0 50%
     padding-top: 50px
 
+.intro-feature-wrap-third
+  padding-top: 20px
+  padding-left: 30px
+  @media mq-tablet
+    flex: 0 0 33.33%
+    padding-top: 50px
+  @media mq-normal
+    flex: 0 0 33.33%
+    padding-top: 50px
+
 .intro-feature
   position: relative
   text-align: center
   @media mq-normal
     text-align: left
     padding-left: 70px
+
+.intro-feature-third
+  position: relative
+  text-align: center
+  @media mq-normal
+    text-align: left
 
 .intro-feature-icon
   color: color-link
@@ -135,37 +235,30 @@
     font-size: 24px
     width: @font-size
 
-.intro-feature-title
-  color: color-link
+.intro-feature-icon-third
+  color: #fedd45
+  font-size: 60px
+  padding-bottom: 26px
+  text-align: center
+  @media mq-normal
+    font-size: 48px
+    width: @font-size
+
+.intro-feature-title, .intro-feature-title-third
   font-family: font-title
   font-size: 24px
+
+.intro-feature-title
+  color: color-link
+
+.intro-feature-title-third
+  color: white
 
 .intro-feature-desc
   margin: line-height 0
   line-height: line-height
+  color: white
 
-#intro-cmd-wrap
-  max-width: 700px
-  background: #eee
-  padding: 15px 0
-  margin: 25px gutter-width * -1 0
-  @media mq-normal
-    margin: 50px auto 0
-
-.intro-cmd-item
-  font-size: 16px
-  font-family: font-mono
-  line-height: 2
-  padding: 0 30px
-  &:before
-    content: "$"
-    color: color-link
-    padding-right: 15px
-
-#intro-get-started-wrap
-  text-align: center
-
-#intro-get-started-link
 #theme-link
   font-size: 18px
   font-family: font-title
@@ -176,13 +269,6 @@
   padding: 12px 24px
   position: relative
   transition: 0.2s
-
-#intro-get-started-link
-  color: color-link
-  border-color: lighten(color-link, 20%)
-  &:hover
-    background: @border-color
-    color: #fff
 
 #theme-link
   color: color-border

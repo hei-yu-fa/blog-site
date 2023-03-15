@@ -308,31 +308,12 @@ For instance:
 
 **Display title of the post.**
 
-`{% raw %}{% post_link hexo-3-8-released %}{% endraw %}`
-
-{% post_link hexo-3-8-released %}
 
 **Display custom text.**
 
-`{% raw %}{% post_link hexo-3-8-released 'Link to a post' %}{% endraw %}`
-
-{% post_link hexo-3-8-released 'Link to a post' %}
-
 **Escape title.**
 
-```
-{% post_link hexo-4-released 'How to use <b> tag in title' %}
-```
-
-{% post_link hexo-4-released 'How to use <b> tag in title' %}
-
 **Do not escape title.**
-
-```
-{% post_link hexo-4-released '<b>bold</b> custom title' false %}
-```
-
-{% post_link hexo-4-released '<b>bold</b> custom title' false %}
 
 ## Include Assets
 
