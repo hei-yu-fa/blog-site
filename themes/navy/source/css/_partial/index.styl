@@ -90,6 +90,11 @@
   line-height: 1.2;
   color: #fff
 
+div#intro-text-wrapper-1, div#intro-text-wrapper-2 {
+  width: 100%;
+  background: #fff;
+}
+
 #intro-text-1, #intro-text-2 {
   text-align: center;
   margin: 0 auto;
@@ -101,11 +106,13 @@
 }
 
 #intro-text-1 {
-  padding: 20% 0%;
-  max-width: 800px;
+  padding: 10%;
+  max-width: 960px;
 }
 
 #intro-text-2 {
+  padding: 10%;
+
   .red {
     color: #f94b4b;
     font-weight: 600;
@@ -148,9 +155,25 @@
   object-fit: cover;
 }
 
+.feature-background-wrap, .feature-background-wrap-third {
+    width: 100%;
+}
+
+.feature-background-wrap {
+  background-color: #171f26;
+}
+
+.feature-background-wrap-third {
+  background-color: black;
+}
+
 .feature-wrap, .feature-wrap-third {
-  margin-top: 20px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
   padding-top: 6rem;
+  padding-bottom: 2rem;
+
   h3.title {
     font-size: 2rem;
   }
@@ -162,23 +185,22 @@
     text-align: center;
     color: white;
   }
-}
 
-.feature-wrap {
-  background-color: #171f26;
-}
-
-.feature-wrap-third {
-  background-color: black;
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+  }
 }
 
 #intro-feature-list, #intro-feature-list-third
-  margin: 1.5rem 0rem;
+  margin: 1.5rem auto;
   padding-top: 20px
   display: flex
   flex-flow: column
   @media mq-normal
     flex-flow: row wrap
+  @media screen and (min-width: 1024px) {
+    padding: 0px 10%;
+  }
 
 .intro-warning
   font-size: 1.1 rem
@@ -202,13 +224,15 @@
 
 .intro-feature-wrap-third
   padding-top: 20px
-  padding-left: 30px
   @media mq-tablet
     flex: 0 0 33.33%
     padding-top: 50px
   @media mq-normal
     flex: 0 0 33.33%
     padding-top: 50px
+  @media screen and (min-width: 1024px) {
+    padding-left: 30px
+  }
 
 .intro-feature
   position: relative
